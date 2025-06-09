@@ -1,110 +1,109 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.Starbucks {
-  width: 250px;
-  position: relative;
-  top: 50px;
-  right: 45px;
-
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
 }
 
 body {
-  padding-top: 20px;
-  padding-right: 100px;
-  padding-left: 100px;
-}
-
-.conteudo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.caixa-texto {
-  width: 600px;
-
-}
-
-h1 {
-  color: #333;
-  font-size: 60px;
-   font-weight: 600;
-}
-
-span {
-  color: #017143;
-  font-size: 70px;
-  font-weight: 900;
-}
-
-
-p {
-  font-size: 20px;
-
-}
-
-button {
-  background: #017143;
-  color: #ffffff;
-  border-radius: 40px;
-  border: none;
-  padding: 10px;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-button:hover {
-  background-color: #018950
-}
-
-
-.caixa_imagem {
-    width: 1 00px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 200px;
-    /* cria uma margem, um espaço */
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
- 
-}
-
-.botaomenu {
-  width: 50px;
-  cursor: pointer;
-  transition: 1.0s;
-  margin: 2px;
-  position: relative;
-  top: 25px;
-}
-
-.botaomenu:hover {
-  transform: translateY(-25px);
-
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative; /* Para o posicionamento absoluto do círculo */
 }
 
 .circulo {
-    width: 100%;
-    height: 100%;
-    background: #017143;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: circle(520px at right 680px);
-    z-index: -1;
-  
+    width: 650px; /* Ajuste o tamanho do círculo conforme necessário */
+    height: 630px; /* Ajuste o tamanho do círculo conforme necessário */
+    background: #017143; /* Cor do círculo */
+    border-radius: 60%; /* Faz o círculo */
+    position: fixed; /* Fixa o círculo na tela */
+    bottom: -100px; /* Distância do fundo */
+    right: -150px; /* Distância da direita */
+    overflow: hidden; /* Para esconder partes da imagem que saem do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Coloca o círculo atrás dos outros elementos */
+    
 }
 
 .logo {
-  width: 70px;
+    width: 80px; /* Ajuste o tamanho do logo se necessário */
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between; /* Mantém os elementos do conteúdo separados */
+    margin-top: 50px; /* Espaço entre o logo e o conteúdo */
+}
+
+.caixa_texto {
+    width: 600px; /* Largura da caixa de texto */
+}
+
+h1 {
+    color: #333333; /* Cor do título */
+    font-size: 60px; /* Tamanho do título */
+    font-weight: 600; /* Peso da fonte */
+}
+
+p {
+    font-size: 16px; /* Tamanho do texto */
+}
+span {
+  color: #017143; /* Cor do texto do span */
+  font-size: 70px; /* Tamanho da fonte do span */
+  font-weight: 900; /* Peso da fonte do span */
+}
+
+
+button {
+    background-color: #017143; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border-radius: 40px; /* Arredondamento das bordas do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin-top: 30px; /* Margem superior do botão */
+}
+
+button:hover {
+    background-color: #008a51; /* Cor do botão ao passar o mouse */
+}
+
+.caixa_imagem {
+    width: 600px; /* Largura da caixa de imagem */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+}
+
+.Starbucks {
+    width: 340px; /* Ajuste o tamanho da imagem Starbucks se necessário */
+    position: fixed;
+     right: 60px;
+ }
+
+.menu {
+    display: flex; /* Para alinhar os botões do menu */
+    justify-content: center; /* Centraliza os botões do menu */
+    margin-top: 30px; /* Espaço entre o conteúdo e o menu */
+}
+
+.botaomenu {
+    width: 80px; /* Largura dos botões do menu */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin: 10px; /* Margem entre os botões do menu */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.botaomenu:hover {
+    transform: translateY(-5px); /* Move o botão para cima ao passar o mouse */
+}
+
+/* Estilo para a imagem dentro do círculo */
+.imagem-circulo {
+    width: 100%; /* A imagem ocupa 100% do círculo */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre o círculo evitando distorção */
 }
